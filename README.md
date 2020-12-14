@@ -1,7 +1,7 @@
 # Foundations-Java
 
 An implementation of the Foundations programming language, written in Java.
-Created along with the [craftinginterpreters](http://www.craftinginterpreters.com/contents.html) book.
+Inspired by the [craftinginterpreters](http://www.craftinginterpreters.com/contents.html) book.
 
 ### Example Program
 ```javascript
