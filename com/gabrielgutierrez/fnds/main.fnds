@@ -1,0 +1,7 @@
+method pp(txt) {
+    print(txt);
+}
+
+let msg = "sup";
+
+pp(msg);

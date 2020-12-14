@@ -1,0 +1,3 @@
+class Foo {}
+Foo.bar = "value";
+print Foo.bar; // expect: value
