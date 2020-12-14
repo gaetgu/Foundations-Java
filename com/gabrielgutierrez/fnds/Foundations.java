@@ -6,11 +6,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-//import java.util.Scanner;
 import java.util.List;
 
-import static com.gabrielgutierrez.fnds.Scanner.*;
-import static com.gabrielgutierrez.fnds.TokenType.*;
+//import static com.gabrielgutierrez.fnds.Scanner.*;
+//import static com.gabrielgutierrez.fnds.TokenType.*;
 
 public class Foundations {
 
