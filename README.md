@@ -40,10 +40,10 @@ method print_user(name) {
 print_user("Gabriel Gutierrez");
 
 // Closures
-fun addPair(a, b) {
+method addPair(a, b) {
   return a + b;
 }
-fun identity(a) {
+method identity(a) {
   return a;
 }
 print identity(addPair)(1, 2); // Prints "3".
@@ -73,7 +73,7 @@ class Java < Programming {
     }
     
     print_ide() {
-        print("You use the " + ide + " IDE!");
+        print("You use the " + this.ide + " IDE!");
     }
 }
 
