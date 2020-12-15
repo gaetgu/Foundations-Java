@@ -1,0 +1,25 @@
+{
+  "bin": {
+    "fnds": "jdeploy-bundle/jdeploy.js"
+  },
+  "author": "Gabriel Gutierrez",
+  "description": "Run .fnds files!",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "https://github.com/gaetgu/Foundations-Java",
+  "version": "1.0.0",
+  "jdeploy": {
+    "jar": "Foundations-Java.jar"
+  },
+  "dependencies": {
+    "shelljs": "^0.7.5"
+  },
+  "license": "ISC",
+  "name": "fnds",
+  "files": [
+    "jdeploy-bundle"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

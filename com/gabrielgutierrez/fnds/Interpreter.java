@@ -446,12 +446,12 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
             case PLUS_PLUS: {
                 if (!(expr.right instanceof Expr.Variable))
                     throw new RuntimeError(expr.operator,
-                            "Operand of an increment operator must be a letiable.");
+                            "Operand of an increment operator must be a variable.");
 
                 checkNumberOperand(expr.operator, right);
                 double value = (double) right;
-                Expr.Variable letiable = (Expr.Variable) expr.right;
-                environment.assign(letiable.name, value + 1);
+                Expr.Variable variable = (Expr.Variable) expr.right;
+                environment.assign(variable.name, value + 1);
 
                 if (expr.postfix)
                     return value;
@@ -461,12 +461,12 @@ class Interpreter implements Expr.Visitor<Object>, Stmt.Visitor<Void> {
             case MINUS_MINUS: {
                 if (!(expr.right instanceof Expr.Variable))
                     throw new RuntimeError(expr.operator,
-                            "Operand of a decrement operator must be a letiable.");
+                            "Operand of a decrement operator must be a variable.");
 
                 checkNumberOperand(expr.operator, right);
                 double value = (double) right;
-                Expr.Variable letiable = (Expr.Variable) expr.right;
-                environment.assign(letiable.name, value - 1);
+                Expr.Variable variable = (Expr.Variable) expr.right;
+                environment.assign(variable.name, value - 1);
 
                 if (expr.postfix)
                     return value;

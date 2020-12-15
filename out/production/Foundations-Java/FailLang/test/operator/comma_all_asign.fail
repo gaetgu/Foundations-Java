@@ -1,2 +1,0 @@
-var a = 4, b, c=5; // Error at ',': Expect assignment in multiple variable declaration.
-print b;

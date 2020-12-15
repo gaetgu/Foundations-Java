@@ -94,7 +94,7 @@ class Parser {
 
     private List<Stmt> letDeclarations() {
         List<Stmt> lst = new ArrayList<>();
-        Token name = consume(IDENTIFIER, "Expect letiable name.");
+        Token name = consume(IDENTIFIER, "Expect variable name.");
 
         Expr initializer = null;
         if (match(EQUAL)) {
@@ -102,13 +102,13 @@ class Parser {
         }
         lst.add(new Stmt.Var(name, initializer));
         while (match(COMMA)) {
-            name = consume(IDENTIFIER, "Expect letiable name.");
-            consume(EQUAL, "Expect assignment in multiple letiable declaration.");
+            name = consume(IDENTIFIER, "Expect variable name.");
+            consume(EQUAL, "Expect assignment in multiple variable declaration.");
             initializer = assignment();
             lst.add(new Stmt.Var(name, initializer));
         }
 
-        consume(SEMICOLON, "Expect ';' after letiable declaration.");
+        consume(SEMICOLON, "Expect ';' after variable declaration.");
         return lst;
     }
 

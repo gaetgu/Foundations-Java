@@ -1,2 +1,0 @@
-var a;
-print a; // expect runtime error: Variable must be initialized before use.

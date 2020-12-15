@@ -1,5 +1,0 @@
-fun last() {
-    return (1), 2, 3;
-}
-
-print last(); // expect: 3

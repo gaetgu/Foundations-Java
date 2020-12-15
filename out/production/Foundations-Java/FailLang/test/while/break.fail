@@ -1,5 +1,0 @@
-while(true) {
-    print "hi";
-    break;
-}
-// expect: hi

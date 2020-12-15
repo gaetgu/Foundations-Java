@@ -182,7 +182,7 @@ class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
                 scopes.peek().containsKey(expr.name.lexeme) &&
                 scopes.peek().get(expr.name.lexeme).state == VariableState.DECLARED) {
             Foundations.error(expr.name,
-                    "Cannot read local letiable in its own initializer.");
+                    "Cannot read local variable in its own initializer.");
         }
 
         resolveReference(expr, expr.name, true);
@@ -338,7 +338,7 @@ class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
 
         for (Map.Entry<String, Variable> entry : scope.entrySet()) {
             if (entry.getValue().state == VariableState.DEFINED) {
-                Foundations.warning(entry.getValue().name, "Local letiable is not used.");
+                Foundations.warning(entry.getValue().name, "Local variable is not used.");
             }
         }
     }

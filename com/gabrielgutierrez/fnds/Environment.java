@@ -33,7 +33,7 @@ class Environment {
         if (enclosing != null) return enclosing.get(name);
 
         throw new RuntimeError(name,
-                "Undefined letiable '" + name.lexeme + "'.");
+                "Undefined variable '" + name.lexeme + "'.");
     }
 
     Object getAt(int distance, String name) {
@@ -52,6 +52,6 @@ class Environment {
         }
 
         throw new RuntimeError(name,
-                "Undefined letiable '" + name.lexeme + "'.");
+                "Undefined variable '" + name.lexeme + "'.");
     }
 }

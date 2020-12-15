@@ -1,1 +1,0 @@
-1--; // expect runtime error: Operand of a decrement operator must be a variable.
